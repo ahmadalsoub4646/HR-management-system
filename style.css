@@ -48,20 +48,9 @@ header ul li a {
     font-size:xx-large;
 } 
 
-main table{
-    border-collapse: collapse;
-    position: fixed;
-    top: 40%;
-    left: 18%;
-    font-size: larger;
-}
 
-table, th, td {
-    padding: 25px;
-    border: 2px solid;
-    border-color: black;
 
-  }
+
 
 footer{
     width: 100%;
@@ -73,25 +62,11 @@ footer{
     
 }
 
-#me {
-    margin: 20px;
-    border: solid;
-    border-color: black;
-    height: 150px;
-    width: 150px;
-}
 
-main div {
-    padding: 25px;
-    display: flex;
-    justify-content: center;
-} 
 
-main div ul {
-    padding: 25px;
-    list-style: none;
-    
-}
+
+
+
 
 #about-main{
     display: flex;
@@ -99,24 +74,9 @@ main div ul {
     
 }
 
-main section {
-    border: solid;
-    border-color: black;
-    border-radius: 15px;
-} 
-main section ul {
-    
-    margin: 20px;
-    list-style: none;
-} 
-#user ul {
-   
-    list-style: none;
-    
-   
-} 
 
-#user ul li label,input {
-    margin: 10px;
-}
+
+
+
+
 
