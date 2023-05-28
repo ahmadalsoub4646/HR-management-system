@@ -4,13 +4,25 @@
     padding: 0px;
     box-sizing: border-box;
 }
-main {
+ main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+body {
+    background-color: cadetblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  div {
+    background-color:darkcyan;
+    margin-bottom: 20px;
+  }
+
 #logo {
+    
     height: 140px ;
     width: 140px;
     position:fixed;
@@ -25,6 +37,7 @@ header h1 {
     color: black;
 }
 header{
+    
     width: 100%;
     height: 150px;
     display: flex;
