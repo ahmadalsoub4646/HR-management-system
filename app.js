@@ -82,7 +82,7 @@ employee.prototype.display = function(allEmployees) {
         div.appendChild(id);
     
         let departmentName = document.createElement("h3");
-        departmentName.textContent="Name : "+allEmployees[i].department;
+        departmentName.textContent="department : "+allEmployees[i].department;
         departmentName.style.padding="10px";
         departmentName.style.fontFamily = "monospace";
         div.appendChild(departmentName);
