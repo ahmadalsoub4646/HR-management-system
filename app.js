@@ -47,81 +47,35 @@ employeeSalary.push(netSalary);
 return netSalary;
 }
 
-
-
 employee.prototype.display = function(allEmployees) {
-    
-    
-    
     for (var i = 0; i < allEmployees.length; i++) {
-
-        let div = document.createElement("div");
-        div.style.border="solid 2px";
-        div.style.height="415px";
-        div.style.width="250px";
-        let body = document.getElementsByTagName("body")[0];
-        body.appendChild(div);
-        
-        let image = document.createElement("img");
-        image.src = allEmployees[i].ImageURL;
-        image.style.height="250px";
-        image.style.width="250px";
-        image.style.padding="30px";
-        div.appendChild(image);
-    
-        let name = document.createElement("h3");
-        name.textContent="Name : "+allEmployees[i].fullName;
-        name.style.padding="10px";
-        name.style.fontFamily = "monospace";
-        div.appendChild(name);
-    
-        let id = document.createElement("h3");
-        id.textContent= "ID : "+allEmployees[i].uniqeID(existingID);
-        id.style.padding="10px";
-        id.style.fontFamily = "monospace";
-        div.appendChild(id);
-    
-        let departmentName = document.createElement("h3");
-        departmentName.textContent="Name : "+allEmployees[i].department;
-        departmentName.style.padding="10px";
-        departmentName.style.fontFamily = "monospace";
-        div.appendChild(departmentName);
-
-        let salary = document.createElement("h3");
-        salary.textContent= "salary : "+allEmployees[i].salary(this.level);
-        salary.style.padding="10px";
-        salary.style.fontFamily = "monospace";
-        div.appendChild(salary);
-        
-
-        document.body.appendChild(div);
-     
-     
-     
+      document.write("<br>");
+      document.write(".   Name : "+allEmployees[i].fullName+"<br>");
+      document.write(".   Salary : "+employeeSalary[i]+"<br>");
       
     }
 }
 //creating objects
 
-var Ghazi = new employee('Ghazi Samer','Administration','Senior' ,'./assets/Ghazi.jpg');
+var Ghazi = new employee('Ghazi Samer','Administration','Senior' ,'');
 Ghazi.uniqeID(existingID);
 Ghazi.salary(Ghazi.level);
-var Lana = new employee('Lana Ali','Finance','Senior','./assets/Lana.jpg');
+var Lana = new employee('Lana Ali','Finance','Senior','');
 Lana.uniqeID(existingID);
 Lana.salary(Lana.level);
-var Tamara = new employee('Tamara Ayoub','Marketing','Senior','./assets/Tamara.jpg');
+var Tamara = new employee('Tamara Ayoub','Marketing','Senior','');
 Tamara.uniqeID(existingID);
 Tamara.salary(Tamara.level);
-var Safi = new employee('Safi Walid','Administration','Mid-Senior','./assets/Safi.jpg');
+var Safi = new employee('Safi Walid','Administration','Mid-Senior','');
 Safi.uniqeID(existingID);
 Safi.salary(Safi.level);
-var Omar = new employee('Omar Zaid','Development','Senior','./assets/Omar.jpg');
+var Omar = new employee('Omar Zaid','Development','Senior','');
 Omar.uniqeID(existingID);
 Omar.salary(Omar.level);
-var Rana = new employee('Rana Saleh','Development','Junior' ,'./assets/Rana.jpg');
+var Rana = new employee('Rana Saleh','Development','Junior' ,'');
 Rana.uniqeID(existingID);
 Rana.salary(Rana.level);
-var Hadi = new employee('Hadi Ahmad','Finance','Mid-Senior' ,'./assets/Hadi.jpg')
+var Hadi = new employee('Hadi Ahmad','Finance','Mid-Senior' ,'')
 Hadi.uniqeID(existingID);
 Hadi.salary(Hadi.level);
 
